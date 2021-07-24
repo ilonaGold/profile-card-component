@@ -3,10 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
+   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -14,22 +12,42 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
+
 <body>
-  Victor Crest
-  26
-  London
+  <div class="container">
+    <img class="bg-pattern-top" src="images/bg-pattern-top.svg">
+    <div class="card">
 
-  80K
-  Followers
+      <header>
+        <img class="bg-pattern-card" src="images/bg-pattern-card.svg">
+        <img class="profile-picture" src="images/image-victor.jpg" alt="profile picture of Victor Crest">
+        <h1 class="name">Victor Crest<span class="age"> 26</span></h1>
+        <h3 class="location"> London</h3>
+       </header>
 
-  803K
-  Likes
+       <div class="line-content-divider"></div>
+       
+      <section>
+        <div class="subsection">
+          <h2 class="number">80K</h2>
+          <h3 class="item">Followers</h3>
+        </div>
+        <div class="subsection">
+          <h2 class="number">803K</h2>
+          <h3 class="item">Likes</h3>
+        </div>
+        <div class="subsection">
+          <h2 class="number">1.4K</h2>
+          <h3 class="item">Photos</h3>
+        </div>
+    </section>
+    </div>
+    <img class="bg-pattern-bottom" src="images/bg-pattern-bottom.svg">
+  </div>
 
-  1.4K
-  Photos
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://replit.com/@ilonaGold">Your Name Here</a>.
   </div>
 </body>
 </html>
