@@ -47,8 +47,14 @@ body {
    ============================
 */
 
-.container {
+body {
     background-color: var(--dark-cyan);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
     position: relative;
     width: 375px;
     height: 667px;
@@ -83,6 +89,7 @@ body {
     width: 331px;
     height: 377px;
     border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 header {
