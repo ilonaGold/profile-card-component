@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography
+   ============================
+*/
+
+body {
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.name, .stats {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.age, .location,.item {
+    font-weight: 400;
+}
+
+.item {
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+
+/* Colors
+   ============================
+*/
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --alpha: 0.2;
+}
+
+.age, .location, .item {
+    color: var(--dark-grayish-blue);
+}
+
+/* Layout
+   ============================
+*/
+
+.container {
+    background-color: var(--dark-cyan);
+    position: relative;
+    width: 375px;
+    height: 667px;
+    margin: 130px auto;
+}
+
+/* BG Image Styling
+   ============================
+*/
+
+.bg-pattern-top {
+    position: absolute;
+    bottom: 35%;
+    right: 45%;
+}
+  
+.bg-pattern-bottom {
+    position: absolute;
+    top: 42%;
+    left: 41%;
+}
+
+/* Card Styling
+   ============================
+*/
+
+.card {
+    position: absolute;
+    top: 145px;
+    left: 22px;
+    background-color: white;
+    width: 331px;
+    height: 377px;
+    border-radius: 15px;
+}
+
+header {
+    position: relative;
+}
+
+.bg-pattern-card {
+    position: absolute;
+    top: 0;
+    width: 331px;
+    height: 143px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.profile-picture {
+    position: absolute;
+    top: 88px;
+    left: 108px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.name {
+    position: absolute;
+    top: 228px;
+    left: 100px;
+}
+
+.location {
+    position: absolute;
+    top: 255px;
+    left: 140px;
+}
+
+section {
+    display: flex;
+    position: absolute;
+    top: 290px;
+    border-top: 1.5px solid hsla(0, 0%, 59%, 0.2);
+    /* border-top: 1px solid hsla(var(--dark-gray), var(--alpha)); */
+    padding-top: 25px;
+    width: 100%;
+}
+
+.subsection {
+    flex: 1;
+}
+
+.stats, .item {
+    text-align: center;
+}
+
+.item {
+    margin-top: 8px;
+}
+
+/* Attribution
+   ============================
+*/
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
